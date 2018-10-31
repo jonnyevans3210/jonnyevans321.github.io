@@ -5,9 +5,34 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+	<style>
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+
+		/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+	}
+	</style>
 	<head>
 		<link rel="icon" href="images/j.jpg" type="image/png"/>
-		<title>Identity by HTML5 UP</title>
+		<title>Jonny Evans' personal website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -35,6 +60,7 @@
 							<h1>Jonny Evans</h1>
 							<h6>PhD student | Data Scientist <br /> 
 			<br />							</h6>
+
 							
 						</header>
 						
@@ -77,11 +103,9 @@
 						-->
 						<footer>
 							<ul class="icons">
-								<li><a href="http://www.linkedin.com/in/jonnyevans321" target="_blank" class="fa-linkedin">LinkedIn</a></li>
-								<li><a href="http://twitter.com/jonnyevans321" target="_blank" class="fa-twitter">Twitter</a></li>
-								<li><a href="http://github.com/JonnyEvans321" target="_blank" class="fa-github">Facebook</a></li>
-								<li><a href="mailto:jonny.evans@soton.ac.uk" target="_blank" class="fa-envelope">Email</a></li>
-								
+								<p style="text-align:left;"><a href="http://www.linkedin.com/in/jonnyevans321" target="_blank">LinkedIn</a> <span style="float:right;"><a href="http://twitter.com/jonnyevans321" target="_blank">Twitter</a></p>
+								<p style="text-align:left;"><a href="http://github.com/JonnyEvans321" target="_blank">Github</a><span style="float:right;"><a href="https://www.kaggle.com/jonnyevans321" target="_blank">Kaggle</a></p>
+								<p style="text-align:left;"><a href="mailto:jonny.evans@soton.ac.uk" target="_blank">Email</span></a><span style="float:right;"><a href="assets/Cv_311018.pdf" target="_blank">CV</a></p>
 							</ul>
 							
 						</footer>
