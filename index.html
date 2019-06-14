@@ -1,93 +1,131 @@
 <!DOCTYPE HTML>
 <!--
-	Miniport by HTML5 UP
+	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+	<style>
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+
+		/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+	}
+	</style>
 	<head>
-		<title>Jonny Evans personal website</title>
+		<link rel="shortcut icon" href="images/j.ico" />
+		<title>Jonny Evans</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" href="images/j.ico" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121961373-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-121961373-1');
+		</script>
+
 	</head>
 	<body class="is-preload">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">About</a></li>
-					<li><a href="#CV">CV</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/avatar.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-9-large col-12-medium">
-							<header>
-								<h1>Jonny Evans</h1>
-							</header>
-							<p>Hello, I'm Jonny and this is my personal website.<br /><br />I'm a machine learning PhD student at the University of Southampton. My research focuses on developing road traffic forecasting and incident detection algorithms. I'm looking for a job as a Machine Learning Engineer, to start after I submit my thesis in July 2019.</p>
-						</div>
-					</div>
-				</div>
-			</article>
-		<!-- CV -->
-			<article id="CV" class="wrapper style2">
-				<h1>CV</h1>
-				<object data='assets/Cv_311018.pdf' type="application/pdf" width= "1300" height= "600">
-					<p>Oops! You don't support PDFs!</p>
-					<p><a href="assets/Cv_311018.pdf">Download Instead</a>
-				</object>
-				<!-- 
-				<div class="container">
-					<embed src= "assets/Cv_311018.pdf" width= "1300" height= "600">
-				</div>
-				-->
-			</article>
-
-		<!-- Contact -->
-			<article id="contact" class="wrapper style2">
-				<div class="container medium">
-					<header>
-					</header>
-					<div class="row">
-						<div class="col-12">
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Jonny Evans</h1>
+							<h2>Machine Learning PhD student			</h2>
+			<br />
 							
-							<h1>Find me on ...</h1>
-							<ul class="social">
-								<h3><li><a target="_blank" title="http://github.com/JonnyEvans321" href="http://github.com/JonnyEvans321" ><span class="label">GitHub</span></a></li><br />
-								<li><a target="_blank" title="https://www.kaggle.com/jonnyevans321" href="https://www.kaggle.com/jonnyevans321" ><span class="label">Kaggle</span></a></li><br />
-								<li><a target="_blank" title="http://www.linkedin.com/in/jonnyevans321" href="http://www.linkedin.com/in/jonnyevans321" ><span class="label">LinkedIn</span></a></li><br />
-								<li><a target="_blank" title="http://twitter.com/jonnyevans321" href="http://twitter.com/jonnyevans321" ><span class="label">Twitter</span></a></li><br />
-								<li><a target="_blank" title="jonnyevans321@hotmail.com" href="mailto:jonnyevans321@hotmail.com" ><span class="label">Email</span></a></li><br />
-								</h3>
+						</header>
+						
+						<!--
+						<hr />
+						<h2>Extra Stuff!</h2>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="field">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="field">
+									<select name="department" id="department">
+										<option value="">Department</option>
+										<option value="sales">Sales</option>
+										<option value="tech">Tech Support</option>
+										<option value="null">/dev/null</option>
+									</select>
+								</div>
+								<div class="field">
+									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+								</div>
+								<div class="field">
+									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+								</div>
+								<div class="field">
+									<label>But are you a robot?</label>
+									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+								</div>
+							</div>
+							<ul class="actions special">
+								<li><a href="#" class="button">Get Started</a></li>
 							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
+						</form>
+						<hr />
+						-->
+						<footer>
+							<ul class="icons">
+								<p style="text-align:left;"><a href="http://www.linkedin.com/in/jonnyevans321" target="_blank">LinkedIn</a> <span style="float:right;"><a href="http://twitter.com/jonnyevans321" target="_blank">Twitter</a></p>
+								<p style="text-align:left;"><a href="http://github.com/JonnyEvans321" target="_blank">Github</a><span style="float:right;"><a href="https://www.kaggle.com/jonnyevans321" target="_blank">Kaggle</a></p>
+								<p style="text-align:left;"><a title="jonnyevans321@hotmail.com" href="mailto:jonnyevans321@hotmail.com" target="_blank">Email</span></a><span style="float:right;"><a href="assets/cv_jonnyevans.pdf" target="_blank">CV</a></p>
+							</ul>
+							
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
 							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
-				</div>
-			</article>
+
+			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 
 	</body>
 </html>
