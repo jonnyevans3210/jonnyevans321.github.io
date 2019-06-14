@@ -910,6 +910,7 @@
 			position: relative;
 			display: block;
 			margin-bottom: 1.5em;
+			
 		}
 
 			#main .avatar img {
@@ -917,6 +918,8 @@
 				margin: 0 auto;
 				border-radius: 100%;
 				box-shadow: 0 0 0 1.5em #ffffff;
+				height: 60%;
+				width:60%;
 			}
 
 			#main .avatar:before {
